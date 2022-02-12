@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training JavaScript</title>
+
+   <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <p> <h1>Calcular o valor gasto em combustível para uma viagem</h1></p>
+        </header>
+
+   
+        <main>
+                 
+            <form action="" method="get" id="form-Gasolina">
+                
+                <p><label for="distance">Informe a distância a ser percorrida:</label>
+                    <input name="distance" id="distancia" type="number" min="1" required >
+                </p>
+                <p>
+                    <label for="valueFuel"> informe o valor do combustivel:</label>
+                    <input type="number" name="valueFuel" id="valorgasolina" placeholder="R$ " min="1" required >
+                </p>
+                <p>
+                    <label for="eficiencia"> Informe o rendimento do veículo por litro:</label>
+                    <input type="number" name="eficiencia" id="rendimento" min="8" required >
+                </p>
+               
+
+                <hr>
+                
+            </form>
+            <p class="calc">
+                
+                
+                <button type="submit" form="form-gasolina" onclick="calcular()"> Calcular</button>
+                <button type="button"  onclick="limpar()">Limpar</button>
+            </p>
+            <p>
+                Seu gasto com combustível será de:
+                <input type="text" id="mostrar"/>
+                <span> </span>
+            </p>
+        </main>
+        <footer>
+            developer By Paulo Dias
+        </footer>
+    </div>
+ 
+</body>
+    <script src="script.js"></script>
+
+</html>
